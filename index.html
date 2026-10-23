@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102A43">
+<meta name="description" content="SkillUp helps students learn practical skills, explore career options, and discover free learning resources.">
+<title>SkillUp | Student Career Hub</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <nav class="container nav" aria-label="Main navigation">
+    <a href="#home" class="logo">SkillUp<span>.</span></a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-expanded="false"
+      aria-controls="navLinks"
+      type="button">
+      Menu
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Skills</a></li>
+      <li><a href="#roadmaps">Roadmaps</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+
+    <a href="#courses" class="btn">Start Learning &rarr;</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-label">
+        <span class="label-dot"></span>
+        YOUR FUTURE STARTS HERE
+      </div>
+
+      <h1>Learn Skills.<br>Build Your <span>Future.</span></h1>
+
+      <p class="hero-description">
+        Discover your potential, learn in-demand skills, explore exciting
+        careers, and take the next step toward the future you want.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn" href="#courses">Explore Skills &rarr;</a>
+        <a class="btn btn-secondary" href="#roadmaps">Explore Careers</a>
+      </div>
+
+      <p class="hero-note">
+        Beginner-friendly learning paths. Practical skills. Your own pace.
+      </p>
+    </div>
+
+    <div class="hero-visual" role="img"
+         aria-label="Illustration of a student learning dashboard">
+      <div class="visual-circle">
+        <div class="dashboard">
+          <div class="window-top">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+          </div>
+
+          <h3>Your learning journey</h3>
+          <p>Small steps lead to big achievements.</p>
+
+          <div class="dashboard-grid">
+            <div class="dashboard-tile">
+              <div class="tile-shape"></div>
+              <div class="tile-line"></div>
+              <div class="tile-line short"></div>
+            </div>
+
+            <div class="dashboard-tile">
+              <div class="tile-shape teal"></div>
+              <div class="tile-line"></div>
+              <div class="tile-line short"></div>
+            </div>
+
+            <div class="dashboard-tile">
+              <div class="tile-shape gold"></div>
+              <div class="tile-line"></div>
+              <div class="tile-line short"></div>
+            </div>
+
+            <div class="dashboard-tile">
+              <div class="tile-shape purple"></div>
+              <div class="tile-line"></div>
+              <div class="tile-line short"></div>
+            </div>
+          </div>
+
+          <div class="progress-label">
+            <span>Learning progress</span>
+            <strong>72%</strong>
+          </div>
+
+          <div class="progress"><span></span></div>
+        </div>
+      </div>
+
+      <div class="floating-card floating-top">
+        Build your skills
+        <small>One lesson at a time</small>
+      </div>
+
+      <div class="floating-card floating-bottom">
+        Your goals matter
+        <small>Learn. Practice. Grow.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<div class="container stats">
+  <div class="stat">
+    <strong>05+</strong>
+    <span>Core skill areas</span>
+  </div>
+
+  <div class="stat">
+    <strong>03</strong>
+    <span>Career roadmaps</span>
+  </div>
+
+  <div class="stat">
+    <strong>Free</strong>
+    <span>Learning resources</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-panel">
+      <span class="kicker">About SkillUp</span>
+      <h3>A clearer path from learning to earning.</h3>
+
+      <p>
+        SkillUp brings practical learning, career exploration, and useful
+        resources together in one student-friendly platform.
+      </p>
+
+      <div class="about-decoration" aria-hidden="true"></div>
+    </div>
+
+    <div class="about-copy">
+      <span class="kicker">Learn with purpose</span>
+      <h3>Your goals. Your journey. Your future.</h3>
+
+      <p>
+        Choosing a career can feel overwhelming. SkillUp helps you discover
+        your interests, develop useful skills, and follow simple roadmaps
+        toward careers you want to explore.
+      </p>
+
+      <ul class="check-list">
+        <li>Discover skills that match your interests</li>
+        <li>Follow beginner-friendly career roadmaps</li>
+        <li>Explore free educational resources</li>
+        <li>Build confidence through real projects</li>
+      </ul>
+
+      <a class="btn" href="#roadmaps" style="margin-top:24px">
+        Find Your Path &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS AND COURSES -->
+<section class="section section-light" id="courses">
+  <div class="container">
+    <div class="section-heading">
+      <span class="kicker">Skills &amp; Courses</span>
+      <h2>Skills that open doors.</h2>
+
+      <p>
+        Start with the basics, practice what you learn, and develop
+        the skills needed to move forward.
+      </p>
+    </div>
+
+    <div class="filters" aria-label="Filter courses">
+      <button type="button" class="filter active"
+              data-filter="all" aria-pressed="true">All Skills</button>
+      <button type="button" class="filter"
+              data-filter="technology" aria-pressed="false">Technology</button>
+      <button type="button" class="filter"
+              data-filter="creative" aria-pressed="false">Creative</button>
+      <button type="button" class="filter"
+              data-filter="communication" aria-pressed="false">Communication</button>
+      <button type="button" class="filter"
+              data-filter="data" aria-pressed="false">Data</button>
+    </div>
+
+    <div class="course-grid">
+      <article class="course-card" data-category="technology">
+        <div class="course-symbol" aria-hidden="true"></div>
+        <h3>Web Development</h3>
+        <p>
+          Learn HTML, CSS, JavaScript, responsive design, and how to
+          build your own websites.
+        </p>
+
+        <div class="course-meta">
+          <span class="level">Beginner</span>
+          <span>Web technologies</span>
+        </div>
+
+        <a class="card-link"
+           href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+           target="_blank" rel="noopener noreferrer">Start learning &rarr;</a>
+      </article>
+
+      <article class="course-card" data-category="technology">
+        <div class="course-symbol teal-bg" aria-hidden="true"></div>
+        <h3>Python Programming</h3>
+        <p>
+          Understand programming logic, functions, loops, and
+          automation through beginner projects.
+        </p>
+
+        <div class="course-meta">
+          <span class="level">Beginner</span>
+          <span>Programming</span>
+        </div>
+
+        <a class="card-link"
+           href="https://www.w3schools.com/python"
+           target="_blank" rel="noopener noreferrer">Start learning &rarr;</a>
+      </article>
+
+      <article class="course-card" data-category="creative">
+        <div class="course-symbol purple-bg" aria-hidden="true"></div>
+        <h3>Graphic Design</h3>
+        <p>
+          Learn visual hierarchy, typography, color theory, layouts,
+          and digital design fundamentals.
+        </p>
+
+        <div class="course-meta">
+          <span class="level">Beginner</span>
+          <span>Creative design</span>
+        </div>
+
+        <a class="card-link"
+           href="https://www.canva.com/designschool/"
+           target="_blank" rel="noopener noreferrer">Start learning &rarr;</a>
+      </article>
+
+      <article class="course-card" data-category="communication">
+        <div class="course-symbol gold-bg" aria-hidden="true"></div>
+        <h3>Communication Skills</h3>
+        <p>
+          Improve public speaking, teamwork, professional writing,
+          interviews, and presentations.
+        </p>
+
+        <div class="course-meta">
+          <span class="level">All levels</span>
+          <span>Personal growth</span>
+        </div>
+
+        <a class="card-link"
+           href="https://www.toastmasters.org/resources"
+           target="_blank" rel="noopener noreferrer">Start learning &rarr;</a>
+      </article>
+
+      <article class="course-card" data-category="data">
+        <div class="course-symbol teal-bg" aria-hidden="true"></div>
+        <h3>Data Analytics</h3>
+        <p>
+          Explore spreadsheets, SQL, basic statistics, data visualization,
+          and analytical thinking.
+        </p>
+
+        <div class="course-meta">
+          <span class="level">Beginner</span>
+          <span>Data skills</span>
+        </div>
+
+        <a class="card-link"
+           href="https://www.kaggle.com/learn"
+           target="_blank" rel="noopener noreferrer">Start learning &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER ROADMAPS -->
+<section class="section" id="roadmaps">
+  <div class="container">
+    <div class="section-heading">
+      <span class="kicker">Career Roadmaps</span>
+      <h2>Turn ambition into action.</h2>
+
+      <p>
+        Follow these practical steps to start exploring three popular
+        digital careers.
+      </p>
+    </div>
+
+    <div class="roadmap-grid">
+
+      <article class="roadmap-card">
+        <div class="roadmap-title">
+          <h3>Web Developer</h3>
+          <p class="subtitle">Build websites and web applications</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <strong>Learn HTML and CSS</strong>
+              <small>Build page structures and style responsive layouts.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <strong>Learn JavaScript</strong>
+              <small>Add interactivity and understand programming basics.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <strong>Create projects</strong>
+              <small>Build a portfolio, website, and useful web application.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">4</span>
+            <div>
+              <strong>Publish your portfolio</strong>
+              <small>Learn Git, deploy your projects, and prepare applications.</small>
+            </div>
+          </li>
+        </ol>
+
+        <p class="roadmap-note">Suggested timeline: 3–6 months*</p>
+      </article>
+
+      <article class="roadmap-card">
+        <div class="roadmap-title">
+          <h3>Data Analyst</h3>
+          <p class="subtitle">Discover insights from data</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <strong>Master spreadsheets</strong>
+              <small>Practice formulas, data cleaning, and charts.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <strong>Learn SQL</strong>
+              <small>Query databases, filter results, and join tables.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <strong>Visualize data</strong>
+              <small>Explore dashboards, statistics, and analytical tools.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">4</span>
+            <div>
+              <strong>Build case studies</strong>
+              <small>Analyze public datasets and communicate your findings.</small>
+            </div>
+          </li>
+        </ol>
+
+        <p class="roadmap-note">Suggested timeline: 3–6 months*</p>
+      </article>
+
+      <article class="roadmap-card">
+        <div class="roadmap-title">
+          <h3>UI/UX Designer</h3>
+          <p class="subtitle">Create better digital experiences</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <strong>Learn design fundamentals</strong>
+              <small>Study typography, colors, layouts, and accessibility.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <strong>Understand users</strong>
+              <small>Explore user research, journeys, and usability.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <strong>Design prototypes</strong>
+              <small>Practice wireframes and interfaces using Figma.</small>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">4</span>
+            <div>
+              <strong>Create case studies</strong>
+              <small>Show your process, decisions, and final designs.</small>
+            </div>
+          </li>
+        </ol>
+
+        <p class="roadmap-note">Suggested timeline: 3–6 months*</p>
+      </article>
+
+    </div>
+
+    <p class="roadmap-disclaimer">
+      *Timelines are estimates. Progress depends on practice and study time.
+    </p>
+  </div>
+</section>
+
+<!-- FREE RESOURCES -->
+<section class="section section-light" id="resources">
+  <div class="container">
+    <div class="section-heading">
+      <span class="kicker">Free Resources</span>
+      <h2>Your learning library.</h2>
+
+      <p>
+        Access useful tutorials, documentation, and educational platforms
+        to continue learning outside the classroom.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+      <a class="resource-card"
+         href="https://developer.mozilla.org/"
+         target="_blank" rel="noopener noreferrer">
+        <span class="resource-number">RESOURCE 01</span>
+        <h3>MDN Web Docs</h3>
+        <p>Web development tutorials, documentation, and practical guides.</p>
+        <span class="resource-link">Visit website &rarr;</span>
+      </a>
+
+      <a class="resource-card"
+         href="https://www.w3schools.com/python"
+         target="_blank" rel="noopener noreferrer">
+        <span class="resource-number">RESOURCE 02</span>
+        <h3>Python Documentation</h3>
+        <p>Learn Python programming from the official documentation.</p>
+        <span class="resource-link">Visit website &rarr;</span>
+      </a>
+
+      <a class="resource-card"
+         href="https://www.freecodecamp.org/learn/"
+         target="_blank" rel="noopener noreferrer">
+        <span class="resource-number">RESOURCE 03</span>
+        <h3>freeCodeCamp</h3>
+        <p>Practice coding with structured lessons and projects.</p>
+        <span class="resource-link">Visit website &rarr;</span>
+      </a>
+
+      <a class="resource-card"
+         href="https://www.kaggle.com/learn"
+         target="_blank" rel="noopener noreferrer">
+        <span class="resource-number">RESOURCE 04</span>
+        <h3>Kaggle Learn</h3>
+        <p>Explore Python, data visualization, and machine learning basics.</p>
+        <span class="resource-link">Visit website &rarr;</span>
+      </a>
+
+      <a class="resource-card"
+         href="https://www.figma.com/resource-library/"
+         target="_blank" rel="noopener noreferrer">
+        <span class="resource-number">RESOURCE 05</span>
+        <h3>Figma Resources</h3>
+        <p>Explore UI/UX design concepts, workflows, and inspiration.</p>
+        <span class="resource-link">Visit website &rarr;</span>
+      </a>
+
+      
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="logo footer-logo">SkillUp<span>.</span></a>
+
+        <p class="footer-description">
+          Helping students discover skills, explore careers, and build
+          a future full of possibilities.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#courses">Skills &amp; Courses</a>
+          <a href="#roadmaps">Career Roadmaps</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Learn More</h4>
+        <div class="footer-links">
+          <a href="#resources">Free Resources</a>
+          <a href="https://www.freecodecamp.org/learn/"
+             target="_blank" rel="noopener noreferrer">Coding Practice</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SkillUp – Student Career Hub.</span>
+      <span>Learn today. Lead tomorrow.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* MOBILE NAVIGATION */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "Close" : "Menu";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "Menu";
+  });
+});
+
+/* COURSE FILTERS */
+const filterButtons = document.querySelectorAll(".filter");
+const courseCards = document.querySelectorAll(".course-card");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.filter;
+
+    filterButtons.forEach(item => {
+      const isActive = item === button;
+
+      item.classList.toggle("active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    courseCards.forEach(card => {
+      card.hidden =
+        category !== "all" &&
+        card.dataset.category !== category;
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>
