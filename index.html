@@ -606,8 +606,9 @@ filterButtons.forEach(button => {
   });
 });
 
-  <p>&copy; <span id="year"></span> SkillUp. All Rights Reserved.</p>
-
+  /* AUTOMATIC COPYRIGHT YEAR */
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
 
 </body>
